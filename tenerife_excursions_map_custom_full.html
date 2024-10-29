@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bb2c33ba6013091a819eabd7ff5c0614 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bb2c33ba6013091a819eabd7ff5c0614" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bb2c33ba6013091a819eabd7ff5c0614 = L.map(
+                "map_bb2c33ba6013091a819eabd7ff5c0614",
+                {
+                    center: [28.0491, -16.7191],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_77b8ceafb1936f7cc84a7a964eccd99b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var marker_b0418ea4bf6d4d08330482dafb0b53bd = L.marker(
+                [28.0491, -16.7191],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_bbc0147cd9929198822d9aea169047aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b0418ea4bf6d4d08330482dafb0b53bd.setIcon(icon_bbc0147cd9929198822d9aea169047aa);
+        
+    
+        var popup_8543ac1136721243e5fbb220079d1013 = L.popup({"maxWidth": 200});
+
+        
+            var html_07b09113f7f5c165521e1434bd7fce18 = $(`<div id="html_07b09113f7f5c165521e1434bd7fce18" style="width: 100.0%; height: 100.0%;"><b>Plage de Las Vistas</b><br><a href='https://fr.wikipedia.org/wiki/Plage_de_Las_Vistas' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_8543ac1136721243e5fbb220079d1013.setContent(html_07b09113f7f5c165521e1434bd7fce18);
+        
+
+        marker_b0418ea4bf6d4d08330482dafb0b53bd.bindPopup(popup_8543ac1136721243e5fbb220079d1013)
+        ;
+
+        
+    
+    
+            marker_b0418ea4bf6d4d08330482dafb0b53bd.bindTooltip(
+                `<div>
+                     Plage de Las Vistas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3752f132b1cc9da81b68bc9a2e991f7 = L.marker(
+                [28.0733, -16.7301],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_c0b0f4ca582dd5e08b5c54a9dacf57f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e3752f132b1cc9da81b68bc9a2e991f7.setIcon(icon_c0b0f4ca582dd5e08b5c54a9dacf57f0);
+        
+    
+        var popup_833582ce3588c8b2b536085ac007b72a = L.popup({"maxWidth": 200});
+
+        
+            var html_76b0caba97086950805320a19b917c20 = $(`<div id="html_76b0caba97086950805320a19b917c20" style="width: 100.0%; height: 100.0%;"><b>Siam Mall</b><br><a href='https://fr.wikipedia.org/wiki/Siam_Mall' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_833582ce3588c8b2b536085ac007b72a.setContent(html_76b0caba97086950805320a19b917c20);
+        
+
+        marker_e3752f132b1cc9da81b68bc9a2e991f7.bindPopup(popup_833582ce3588c8b2b536085ac007b72a)
+        ;
+
+        
+    
+    
+            marker_e3752f132b1cc9da81b68bc9a2e991f7.bindTooltip(
+                `<div>
+                     Siam Mall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0c96f28baac7ddce08a530296592486 = L.marker(
+                [28.3549, -16.3735],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_954416872a2a89ed1b9c86a8e7dc925c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d0c96f28baac7ddce08a530296592486.setIcon(icon_954416872a2a89ed1b9c86a8e7dc925c);
+        
+    
+        var popup_83053859094e5960a5ad0bf70694d970 = L.popup({"maxWidth": 200});
+
+        
+            var html_094aea898cd05112def989a672a61d3a = $(`<div id="html_094aea898cd05112def989a672a61d3a" style="width: 100.0%; height: 100.0%;"><b>Basilique de Candelaria</b><br><a href='https://fr.wikipedia.org/wiki/Basilique_de_la_Candelaria' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_83053859094e5960a5ad0bf70694d970.setContent(html_094aea898cd05112def989a672a61d3a);
+        
+
+        marker_d0c96f28baac7ddce08a530296592486.bindPopup(popup_83053859094e5960a5ad0bf70694d970)
+        ;
+
+        
+    
+    
+            marker_d0c96f28baac7ddce08a530296592486.bindTooltip(
+                `<div>
+                     Basilique de Candelaria
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_afcfbe968786f696aefed7ec4e62015f = L.marker(
+                [28.4698, -16.2546],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_9e3f0446021dc0486dfe6cbf567a9936 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_afcfbe968786f696aefed7ec4e62015f.setIcon(icon_9e3f0446021dc0486dfe6cbf567a9936);
+        
+    
+        var popup_7edc5a6d94083fecad431f240f278be4 = L.popup({"maxWidth": 200});
+
+        
+            var html_3dd664f6701f13547929a44521652ef9 = $(`<div id="html_3dd664f6701f13547929a44521652ef9" style="width: 100.0%; height: 100.0%;"><b>Santa Cruz de Tenerife</b><br><a href='https://fr.wikipedia.org/wiki/Santa_Cruz_de_Tenerife' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_7edc5a6d94083fecad431f240f278be4.setContent(html_3dd664f6701f13547929a44521652ef9);
+        
+
+        marker_afcfbe968786f696aefed7ec4e62015f.bindPopup(popup_7edc5a6d94083fecad431f240f278be4)
+        ;
+
+        
+    
+    
+            marker_afcfbe968786f696aefed7ec4e62015f.bindTooltip(
+                `<div>
+                     Santa Cruz de Tenerife
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7bc010f13d8875b2781c4aeda16ea580 = L.marker(
+                [28.2724, -16.6425],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_241f526dacc25b331021a6fc452fde9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7bc010f13d8875b2781c4aeda16ea580.setIcon(icon_241f526dacc25b331021a6fc452fde9c);
+        
+    
+        var popup_ace7ca49755b660614eed0c1276fc9ef = L.popup({"maxWidth": 200});
+
+        
+            var html_6f206bf8465a07c816690b2e3dbec376 = $(`<div id="html_6f206bf8465a07c816690b2e3dbec376" style="width: 100.0%; height: 100.0%;"><b>Parc national du Teide</b><br><a href='https://fr.wikipedia.org/wiki/Parc_national_du_Teide' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_ace7ca49755b660614eed0c1276fc9ef.setContent(html_6f206bf8465a07c816690b2e3dbec376);
+        
+
+        marker_7bc010f13d8875b2781c4aeda16ea580.bindPopup(popup_ace7ca49755b660614eed0c1276fc9ef)
+        ;
+
+        
+    
+    
+            marker_7bc010f13d8875b2781c4aeda16ea580.bindTooltip(
+                `<div>
+                     Parc national du Teide
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e939014dabab445ae0512cec642f772 = L.marker(
+                [28.1084, -16.6613],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_c5bc300b5f0fc2997539a358524b3f71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4e939014dabab445ae0512cec642f772.setIcon(icon_c5bc300b5f0fc2997539a358524b3f71);
+        
+    
+        var popup_fef728c99eb192f0f70afaf3856f5c5b = L.popup({"maxWidth": 200});
+
+        
+            var html_660ebbc653055a449d49e3785e89a686 = $(`<div id="html_660ebbc653055a449d49e3785e89a686" style="width: 100.0%; height: 100.0%;"><b>Mirador de la Centinela</b><br><a href='https://fr.wikipedia.org/wiki/San_Miguel_de_Abona#Mirador_de_la_Centinela' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_fef728c99eb192f0f70afaf3856f5c5b.setContent(html_660ebbc653055a449d49e3785e89a686);
+        
+
+        marker_4e939014dabab445ae0512cec642f772.bindPopup(popup_fef728c99eb192f0f70afaf3856f5c5b)
+        ;
+
+        
+    
+    
+            marker_4e939014dabab445ae0512cec642f772.bindTooltip(
+                `<div>
+                     Mirador de la Centinela
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f14c345194552d48401c9e5f0ec9dafe = L.marker(
+                [28.0896, -16.7353],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_f48232c4f17e6f334dd36f81f5ab9352 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f14c345194552d48401c9e5f0ec9dafe.setIcon(icon_f48232c4f17e6f334dd36f81f5ab9352);
+        
+    
+        var popup_83fee56391edbd0b4abfb8cd57a4985c = L.popup({"maxWidth": 200});
+
+        
+            var html_083722907accd524a2e46892d2c34c1c = $(`<div id="html_083722907accd524a2e46892d2c34c1c" style="width: 100.0%; height: 100.0%;"><b>Plaza del Duque</b><br><a href='https://fr.wikipedia.org/wiki/Costa_Adeje#Plaza_del_Duque' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_83fee56391edbd0b4abfb8cd57a4985c.setContent(html_083722907accd524a2e46892d2c34c1c);
+        
+
+        marker_f14c345194552d48401c9e5f0ec9dafe.bindPopup(popup_83fee56391edbd0b4abfb8cd57a4985c)
+        ;
+
+        
+    
+    
+            marker_f14c345194552d48401c9e5f0ec9dafe.bindTooltip(
+                `<div>
+                     Plaza del Duque
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1be378077cf341e693bbc5f3557928b0 = L.marker(
+                [28.4546, -16.2605],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_f78b737d5822dfc45a5342fe1988c0f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1be378077cf341e693bbc5f3557928b0.setIcon(icon_f78b737d5822dfc45a5342fe1988c0f7);
+        
+    
+        var popup_871aa5de4584f010ee06cd184c99a7fc = L.popup({"maxWidth": 200});
+
+        
+            var html_fead5938e80aefe5a0ccfd76b90c172c = $(`<div id="html_fead5938e80aefe5a0ccfd76b90c172c" style="width: 100.0%; height: 100.0%;"><b>Parc maritime César Manrique</b><br><a href='https://fr.wikipedia.org/wiki/Parc_maritime_C%C3%A9sar_Manrique' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_871aa5de4584f010ee06cd184c99a7fc.setContent(html_fead5938e80aefe5a0ccfd76b90c172c);
+        
+
+        marker_1be378077cf341e693bbc5f3557928b0.bindPopup(popup_871aa5de4584f010ee06cd184c99a7fc)
+        ;
+
+        
+    
+    
+            marker_1be378077cf341e693bbc5f3557928b0.bindTooltip(
+                `<div>
+                     Parc maritime César Manrique
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d353806a687b283073d754b2b0140a0 = L.marker(
+                [28.0561, -16.7204],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_bfd3c4a5d47289c03f6eab18fdb4d967 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8d353806a687b283073d754b2b0140a0.setIcon(icon_bfd3c4a5d47289c03f6eab18fdb4d967);
+        
+    
+        var popup_cc4447cf91ef309d65282d0abebc62fb = L.popup({"maxWidth": 200});
+
+        
+            var html_62515c2c36ed3d231da035340d2c33a8 = $(`<div id="html_62515c2c36ed3d231da035340d2c33a8" style="width: 100.0%; height: 100.0%;"><b>Los Cristianos</b><br><a href='https://fr.wikipedia.org/wiki/Los_Cristianos' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_cc4447cf91ef309d65282d0abebc62fb.setContent(html_62515c2c36ed3d231da035340d2c33a8);
+        
+
+        marker_8d353806a687b283073d754b2b0140a0.bindPopup(popup_cc4447cf91ef309d65282d0abebc62fb)
+        ;
+
+        
+    
+    
+            marker_8d353806a687b283073d754b2b0140a0.bindTooltip(
+                `<div>
+                     Los Cristianos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9c3c977a6f304d647ea47418d64bd4f = L.marker(
+                [28.4137, -16.5489],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_18fcad7303c3a1ff1d332fae46db0c31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c9c3c977a6f304d647ea47418d64bd4f.setIcon(icon_18fcad7303c3a1ff1d332fae46db0c31);
+        
+    
+        var popup_80022b9ec154fdc4ced754d5fd9e12f8 = L.popup({"maxWidth": 200});
+
+        
+            var html_e6d4e6391034c4b93d7d2f81fb01f2d7 = $(`<div id="html_e6d4e6391034c4b93d7d2f81fb01f2d7" style="width: 100.0%; height: 100.0%;"><b>Jardin botanique de Puerto de la Cruz</b><br><a href='https://fr.wikipedia.org/wiki/Jardin_botanique_de_Puerto_de_la_Cruz' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_80022b9ec154fdc4ced754d5fd9e12f8.setContent(html_e6d4e6391034c4b93d7d2f81fb01f2d7);
+        
+
+        marker_c9c3c977a6f304d647ea47418d64bd4f.bindPopup(popup_80022b9ec154fdc4ced754d5fd9e12f8)
+        ;
+
+        
+    
+    
+            marker_c9c3c977a6f304d647ea47418d64bd4f.bindTooltip(
+                `<div>
+                     Jardin botanique de Puerto de la Cruz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd5331b6354580a8caf94c5dba422180 = L.marker(
+                [28.4222, -16.5582],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_99e8383281e397b9ce910217caaadce6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd5331b6354580a8caf94c5dba422180.setIcon(icon_99e8383281e397b9ce910217caaadce6);
+        
+    
+        var popup_e199cdf85cd61f219373416efd365630 = L.popup({"maxWidth": 200});
+
+        
+            var html_d0a3ebce508fa62ec8022e1895676e56 = $(`<div id="html_d0a3ebce508fa62ec8022e1895676e56" style="width: 100.0%; height: 100.0%;"><b>Centro Comercial La Villa</b><br><a href='https://fr.wikipedia.org/wiki/La_Orotava#Economie' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_e199cdf85cd61f219373416efd365630.setContent(html_d0a3ebce508fa62ec8022e1895676e56);
+        
+
+        marker_fd5331b6354580a8caf94c5dba422180.bindPopup(popup_e199cdf85cd61f219373416efd365630)
+        ;
+
+        
+    
+    
+            marker_fd5331b6354580a8caf94c5dba422180.bindTooltip(
+                `<div>
+                     Centro Comercial La Villa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4700f2511e57a5878290377b4d2f215d = L.marker(
+                [28.4628, -16.2593],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_e240e9c40115b283e72342eff12e2db9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4700f2511e57a5878290377b4d2f215d.setIcon(icon_e240e9c40115b283e72342eff12e2db9);
+        
+    
+        var popup_782fe30c68a9bd29e5353247e53e86b4 = L.popup({"maxWidth": 200});
+
+        
+            var html_353e80c6f13b3863378dbd6955daa68d = $(`<div id="html_353e80c6f13b3863378dbd6955daa68d" style="width: 100.0%; height: 100.0%;"><b>Centro Comercial Meridiano</b><br><a href='https://fr.wikipedia.org/wiki/Santa_Cruz_de_Tenerife#Economie' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_782fe30c68a9bd29e5353247e53e86b4.setContent(html_353e80c6f13b3863378dbd6955daa68d);
+        
+
+        marker_4700f2511e57a5878290377b4d2f215d.bindPopup(popup_782fe30c68a9bd29e5353247e53e86b4)
+        ;
+
+        
+    
+    
+            marker_4700f2511e57a5878290377b4d2f215d.bindTooltip(
+                `<div>
+                     Centro Comercial Meridiano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7bebbd2dd576db2a287b988c616f6e63 = L.marker(
+                [28.4595, -16.2602],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_b5c11cdfb6099ba9ac9cba496769c532 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7bebbd2dd576db2a287b988c616f6e63.setIcon(icon_b5c11cdfb6099ba9ac9cba496769c532);
+        
+    
+        var popup_d9ae97d3319c2c7d195a3d2f53bb5efa = L.popup({"maxWidth": 200});
+
+        
+            var html_a1b1520df32a8839e853503a999273a6 = $(`<div id="html_a1b1520df32a8839e853503a999273a6" style="width: 100.0%; height: 100.0%;"><b>Centro Comercial El Corte Inglés</b><br><a href='https://es.wikipedia.org/wiki/El_Corte_Ingl%C3%A9s' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_d9ae97d3319c2c7d195a3d2f53bb5efa.setContent(html_a1b1520df32a8839e853503a999273a6);
+        
+
+        marker_7bebbd2dd576db2a287b988c616f6e63.bindPopup(popup_d9ae97d3319c2c7d195a3d2f53bb5efa)
+        ;
+
+        
+    
+    
+            marker_7bebbd2dd576db2a287b988c616f6e63.bindTooltip(
+                `<div>
+                     Centro Comercial El Corte Inglés
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6dbdc109e2f896c79277a54b0d154e94 = L.marker(
+                [28.4662, -16.254],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_4bbbc5951992e5c755b04f5539b5fd61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6dbdc109e2f896c79277a54b0d154e94.setIcon(icon_4bbbc5951992e5c755b04f5539b5fd61);
+        
+    
+        var popup_9b0d4b30b3e2f354c81bd696d1c8f371 = L.popup({"maxWidth": 200});
+
+        
+            var html_d5868d98cb1e03e2727c2a0108bf479f = $(`<div id="html_d5868d98cb1e03e2727c2a0108bf479f" style="width: 100.0%; height: 100.0%;"><b>Parc García Sanabria</b><br><a href='https://fr.wikipedia.org/wiki/Parc_Garc%C3%ADa_Sanabria' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_9b0d4b30b3e2f354c81bd696d1c8f371.setContent(html_d5868d98cb1e03e2727c2a0108bf479f);
+        
+
+        marker_6dbdc109e2f896c79277a54b0d154e94.bindPopup(popup_9b0d4b30b3e2f354c81bd696d1c8f371)
+        ;
+
+        
+    
+    
+            marker_6dbdc109e2f896c79277a54b0d154e94.bindTooltip(
+                `<div>
+                     Parc García Sanabria
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_765bc92c3d4091d64007ab079544dea1 = L.marker(
+                [28.4367, -16.2576],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_a3f51775db79435040c80d1d5c38c09b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_765bc92c3d4091d64007ab079544dea1.setIcon(icon_a3f51775db79435040c80d1d5c38c09b);
+        
+    
+        var popup_6496cb4e190ef2fb9051e917aa915c7b = L.popup({"maxWidth": 200});
+
+        
+            var html_bc81bd0e8bada9c3024760c849d2a5c8 = $(`<div id="html_bc81bd0e8bada9c3024760c849d2a5c8" style="width: 100.0%; height: 100.0%;"><b>Auditorium de Tenerife</b><br><a href='https://fr.wikipedia.org/wiki/Auditorium_de_Tenerife' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_6496cb4e190ef2fb9051e917aa915c7b.setContent(html_bc81bd0e8bada9c3024760c849d2a5c8);
+        
+
+        marker_765bc92c3d4091d64007ab079544dea1.bindPopup(popup_6496cb4e190ef2fb9051e917aa915c7b)
+        ;
+
+        
+    
+    
+            marker_765bc92c3d4091d64007ab079544dea1.bindTooltip(
+                `<div>
+                     Auditorium de Tenerife
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0cf5113da3bdd44f34807c3aa4e4a7ab = L.marker(
+                [28.3146, -16.4117],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_d310c290acfd37ced6a2ec91e9277dd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0cf5113da3bdd44f34807c3aa4e4a7ab.setIcon(icon_d310c290acfd37ced6a2ec91e9277dd5);
+        
+    
+        var popup_99db2212a8b60ff09678745f8fc81f96 = L.popup({"maxWidth": 200});
+
+        
+            var html_29308a29086af474a7f0c9f27aabf94b = $(`<div id="html_29308a29086af474a7f0c9f27aabf94b" style="width: 100.0%; height: 100.0%;"><b>Pyramides de Güímar</b><br><a href='https://fr.wikipedia.org/wiki/Pyramides_de_G%C3%BC%C3%ADmar' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_99db2212a8b60ff09678745f8fc81f96.setContent(html_29308a29086af474a7f0c9f27aabf94b);
+        
+
+        marker_0cf5113da3bdd44f34807c3aa4e4a7ab.bindPopup(popup_99db2212a8b60ff09678745f8fc81f96)
+        ;
+
+        
+    
+    
+            marker_0cf5113da3bdd44f34807c3aa4e4a7ab.bindTooltip(
+                `<div>
+                     Pyramides de Güímar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e721ee697f09713dd95a317a016d479 = L.marker(
+                [28.4684, -16.255],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_6606964d3d7c0e755c15048463c950b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5e721ee697f09713dd95a317a016d479.setIcon(icon_6606964d3d7c0e755c15048463c950b5);
+        
+    
+        var popup_3f4a854c6d68936ff3316b9222106366 = L.popup({"maxWidth": 200});
+
+        
+            var html_2e5ff68230f7e3ffea137bbd3f0a3429 = $(`<div id="html_2e5ff68230f7e3ffea137bbd3f0a3429" style="width: 100.0%; height: 100.0%;"><b>Museo de la Naturaleza y Arqueología</b><br><a href='https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_la_Nature_et_de_l%27Homme' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_3f4a854c6d68936ff3316b9222106366.setContent(html_2e5ff68230f7e3ffea137bbd3f0a3429);
+        
+
+        marker_5e721ee697f09713dd95a317a016d479.bindPopup(popup_3f4a854c6d68936ff3316b9222106366)
+        ;
+
+        
+    
+    
+            marker_5e721ee697f09713dd95a317a016d479.bindTooltip(
+                `<div>
+                     Museo de la Naturaleza y Arqueología
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7cd9ae0ef5a9404bee4a1ee48ac30a5 = L.marker(
+                [28.4893, -16.3177],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_51d5391d3f4937ed7a1a3775c5c8d06c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f7cd9ae0ef5a9404bee4a1ee48ac30a5.setIcon(icon_51d5391d3f4937ed7a1a3775c5c8d06c);
+        
+    
+        var popup_3c2a743531d4c486331b7cbbbe6476ee = L.popup({"maxWidth": 200});
+
+        
+            var html_3c5ed0917b47d63dd7af3be01db0c52e = $(`<div id="html_3c5ed0917b47d63dd7af3be01db0c52e" style="width: 100.0%; height: 100.0%;"><b>San Benito (La Laguna)</b><br><a href='https://fr.wikipedia.org/wiki/San_Crist%C3%B3bal_de_La_Laguna' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_3c2a743531d4c486331b7cbbbe6476ee.setContent(html_3c5ed0917b47d63dd7af3be01db0c52e);
+        
+
+        marker_f7cd9ae0ef5a9404bee4a1ee48ac30a5.bindPopup(popup_3c2a743531d4c486331b7cbbbe6476ee)
+        ;
+
+        
+    
+    
+            marker_f7cd9ae0ef5a9404bee4a1ee48ac30a5.bindTooltip(
+                `<div>
+                     San Benito (La Laguna)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f32ce98bdd2875c13095d09f41872e1 = L.marker(
+                [28.3676, -16.8136],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_9704d9ae01c50a14ed6d250787611ee6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9f32ce98bdd2875c13095d09f41872e1.setIcon(icon_9704d9ae01c50a14ed6d250787611ee6);
+        
+    
+        var popup_32bf510ccda85ff67d14a4f5cf33ac27 = L.popup({"maxWidth": 200});
+
+        
+            var html_c86ec383e415b1b099c3db3037e3c6b5 = $(`<div id="html_c86ec383e415b1b099c3db3037e3c6b5" style="width: 100.0%; height: 100.0%;"><b>Los Silos</b><br><a href='https://fr.wikipedia.org/wiki/Los_Silos' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_32bf510ccda85ff67d14a4f5cf33ac27.setContent(html_c86ec383e415b1b099c3db3037e3c6b5);
+        
+
+        marker_9f32ce98bdd2875c13095d09f41872e1.bindPopup(popup_32bf510ccda85ff67d14a4f5cf33ac27)
+        ;
+
+        
+    
+    
+            marker_9f32ce98bdd2875c13095d09f41872e1.bindTooltip(
+                `<div>
+                     Los Silos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea5146dfe9ad6beef7bfae0d8c573d2a = L.marker(
+                [28.4762, -16.44],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_632dfa7fba21d1fe6318ae10c4eb73f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ea5146dfe9ad6beef7bfae0d8c573d2a.setIcon(icon_632dfa7fba21d1fe6318ae10c4eb73f0);
+        
+    
+        var popup_33f667d2f0d62aa933a09a22273f0311 = L.popup({"maxWidth": 200});
+
+        
+            var html_98e3613f787f1ccb5fad64f4438633eb = $(`<div id="html_98e3613f787f1ccb5fad64f4438633eb" style="width: 100.0%; height: 100.0%;"><b>Bodega Monje (El Sauzal)</b><br><a href='https://fr.wikipedia.org/wiki/Bodegas_Monje' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_33f667d2f0d62aa933a09a22273f0311.setContent(html_98e3613f787f1ccb5fad64f4438633eb);
+        
+
+        marker_ea5146dfe9ad6beef7bfae0d8c573d2a.bindPopup(popup_33f667d2f0d62aa933a09a22273f0311)
+        ;
+
+        
+    
+    
+            marker_ea5146dfe9ad6beef7bfae0d8c573d2a.bindTooltip(
+                `<div>
+                     Bodega Monje (El Sauzal)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81d8b3baa2db0d30b5f617cca8c6887d = L.marker(
+                [28.3738, -16.7658],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_e76acb24e57b27ae5328c6c7d3c7c1ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_81d8b3baa2db0d30b5f617cca8c6887d.setIcon(icon_e76acb24e57b27ae5328c6c7d3c7c1ce);
+        
+    
+        var popup_ade0eac194a994bbde82f4b7a33792f4 = L.popup({"maxWidth": 200});
+
+        
+            var html_4fae2491b885db4147ffd712c14f4a20 = $(`<div id="html_4fae2491b885db4147ffd712c14f4a20" style="width: 100.0%; height: 100.0%;"><b>Plaza de la Libertad (Garachico)</b><br><a href='https://fr.wikipedia.org/wiki/Garachico' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_ade0eac194a994bbde82f4b7a33792f4.setContent(html_4fae2491b885db4147ffd712c14f4a20);
+        
+
+        marker_81d8b3baa2db0d30b5f617cca8c6887d.bindPopup(popup_ade0eac194a994bbde82f4b7a33792f4)
+        ;
+
+        
+    
+    
+            marker_81d8b3baa2db0d30b5f617cca8c6887d.bindTooltip(
+                `<div>
+                     Plaza de la Libertad (Garachico)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b901d1ae4b0b85e8f43a88367fac530 = L.marker(
+                [28.1592, -16.6375],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_80e1367c6188c35de4ab78f5fa807ed9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4b901d1ae4b0b85e8f43a88367fac530.setIcon(icon_80e1367c6188c35de4ab78f5fa807ed9);
+        
+    
+        var popup_2122b2627db0ba7513b11ebd067f26fa = L.popup({"maxWidth": 200});
+
+        
+            var html_9561cd4ceeb9a42bf30435022f5a223d = $(`<div id="html_9561cd4ceeb9a42bf30435022f5a223d" style="width: 100.0%; height: 100.0%;"><b>Vilaflor - Jardins de lavande</b><br><a href='https://fr.wikipedia.org/wiki/Vilaflor_(Tenerife)' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_2122b2627db0ba7513b11ebd067f26fa.setContent(html_9561cd4ceeb9a42bf30435022f5a223d);
+        
+
+        marker_4b901d1ae4b0b85e8f43a88367fac530.bindPopup(popup_2122b2627db0ba7513b11ebd067f26fa)
+        ;
+
+        
+    
+    
+            marker_4b901d1ae4b0b85e8f43a88367fac530.bindTooltip(
+                `<div>
+                     Vilaflor - Jardins de lavande
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c2eb177386dfb87ca922247233aa72a = L.marker(
+                [28.1228, -16.7293],
+                {}
+            ).addTo(map_bb2c33ba6013091a819eabd7ff5c0614);
+        
+    
+            var icon_adfef7faec7becae549032e9e1a6e397 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7c2eb177386dfb87ca922247233aa72a.setIcon(icon_adfef7faec7becae549032e9e1a6e397);
+        
+    
+        var popup_f3b653ad00b8b793da95167f9d2ce2b3 = L.popup({"maxWidth": 200});
+
+        
+            var html_d7c186c9c1748364d274d501bd89067d = $(`<div id="html_d7c186c9c1748364d274d501bd89067d" style="width: 100.0%; height: 100.0%;"><b>Musée d'histoire d'Adeje</b><br><a href='https://fr.wikipedia.org/wiki/Adeje' target='_blank'>Voir sur Wikipedia</a></div>`)[0];
+            popup_f3b653ad00b8b793da95167f9d2ce2b3.setContent(html_d7c186c9c1748364d274d501bd89067d);
+        
+
+        marker_7c2eb177386dfb87ca922247233aa72a.bindPopup(popup_f3b653ad00b8b793da95167f9d2ce2b3)
+        ;
+
+        
+    
+    
+            marker_7c2eb177386dfb87ca922247233aa72a.bindTooltip(
+                `<div>
+                     Musée d'histoire d'Adeje
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
