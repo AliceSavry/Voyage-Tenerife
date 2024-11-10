@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>
+        L_NO_TOUCH = false;
+        L_DISABLE_3D = false;
+    </script>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+</head>
+<body>
+    <div id="map" style="height: 100%;"></div>
+<script>
+    // Initialisation de la carte
+    var map = L.map('map').setView([28.2916, -16.6291], 10); // Coordonnées de Tenerife
+
+    // Ajout de la couche de tuiles OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Définition d'une fonction de création de marqueur avec des options personnalisées
+    function createCustomMarker(coords, title, url, markerColor) {
+        var customIcon = L.AwesomeMarkers.icon({
+            icon: 'info-sign',
+            markerColor: markerColor || 'blue',
+            prefix: 'glyphicon',
+            iconColor: 'white'
+        });
+        var marker = L.marker(coords, { icon: customIcon }).addTo(map);
+        marker.bindPopup('<b>' + title + '</b><br><a href="' + url + '" target="_blank">Voir des images</a>');
+    }
+
+    // Liste des lieux avec destinations supplémentaires ajoutées
+    var lieux = [
+        // Plages
+        { nom: "Plage de Las Teresitas", coords: [28.5036, -16.1881], lien: "https://www.google.com/search?tbm=isch&q=Plage+de+Las+Teresitas+Tenerife", couleur: "blue" },
+        { nom: "Plage del Duque", coords: [28.0881, -16.7350], lien: "https://www.google.com/search?tbm=isch&q=Playa+del+Duque+Tenerife", couleur: "green" },
+        { nom: "Plage de Fañabé", coords: [28.0798, -16.7346], lien: "https://www.google.com/search?tbm=isch&q=Playa+de+Fanabe+Tenerife", couleur: "yellow" },
+        { nom: "Plage de la Tejita", coords: [28.0406, -16.5728], lien: "https://www.google.com/search?tbm=isch&q=Playa+de+la+Tejita+Tenerife", couleur: "red" },
+        { nom: "Plage de Los Cristianos", coords: [28.0561, -16.7205], lien: "https://www.google.com/search?tbm=isch&q=Plage+de+Los+Cristianos+Tenerife", couleur: "orange" },
+        
+        // Lieux de Visite et Paysages
+        { nom: "Parc national du Teide", coords: [28.2724, -16.6425], lien: "https://www.google.com/search?tbm=isch&q=Parc+national+du+Teide+Tenerife", couleur: "purple" },
+        { nom: "Masca", coords: [28.3045, -16.8344], lien: "https://www.google.com/search?tbm=isch&q=Masca+Tenerife", couleur: "teal" },
+        { nom: "Cueva del Viento", coords: [28.3664, -16.7312], lien: "https://www.google.com/search?tbm=isch&q=Cueva+del+Viento+Tenerife", couleur: "pink" },
+        { nom: "Auditorium de Tenerife", coords: [28.4367, -16.2576], lien: "https://www.google.com/search?tbm=isch&q=Auditorium+de+Tenerife", couleur: "red" },
+        { nom: "Jardin Botanique de Puerto de la Cruz", coords: [28.4120, -16.5537], lien: "https://www.google.com/search?tbm=isch&q=Jardin+Botanique+Puerto+de+la+Cruz+Tenerife", couleur: "green" },
+        { nom: "Roque Cinchado", coords: [28.2725, -16.6369], lien: "https://www.google.com/search?tbm=isch&q=Roque+Cinchado+Tenerife", couleur: "brown" },
+        { nom: "Drago Milenario", coords: [28.3665, -16.7131], lien: "https://www.google.com/search?tbm=isch&q=Drago+Milenario+Icod+de+los+Vinos", couleur: "orange" },
+        
+        // Villes
+        { nom: "Santa Cruz de Tenerife", coords: [28.4698, -16.2546], lien: "https://www.google.com/search?tbm=isch&q=Santa+Cruz+de+Tenerife", couleur: "orange" },
+        { nom: "La Laguna", coords: [28.4874, -16.3159], lien: "https://www.google.com/search?tbm=isch&q=La+Laguna+Tenerife", couleur: "yellow" },
+        { nom: "Puerto de la Cruz", coords: [28.4142, -16.5448], lien: "https://www.google.com/search?tbm=isch&q=Puerto+de+la+Cruz+Tenerife", couleur: "blue" },
+        { nom: "Garachico", coords: [28.3725, -16.7645], lien: "https://www.google.com/search?tbm=isch&q=Garachico+Tenerife", couleur: "purple" },
+        
+        // Centres Commerciaux
+        { nom: "Siam Mall", coords: [28.0733, -16.7301], lien: "https://www.google.com/search?tbm=isch&q=Siam+Mall+Tenerife", couleur: "purple" },
+        { nom: "Centro Comercial Meridiano", coords: [28.4628, -16.2593], lien: "https://www.google.com/search?tbm=isch&q=Centro+Comercial+Meridiano+Tenerife", couleur: "pink" },
+        { nom: "Centro Comercial La Villa", coords: [28.4222, -16.5582], lien: "https://www.google.com/search?tbm=isch&q=Centro+Comercial+La+Villa+Tenerife", couleur: "cyan" },
+        { nom: "El Corte Inglés", coords: [28.4690, -16.2577], lien: "https://www.google.com/search?tbm=isch&q=El+Corte+Ingles+Tenerife", couleur: "green" }
+    ];
+
+    // Ajout des marqueurs
+    lieux.forEach(function(lieu) {
+        createCustomMarker(lieu.coords, lieu.nom, lieu.lien, lieu.couleur);
+    });
+</script>
+</body>
+</html>
